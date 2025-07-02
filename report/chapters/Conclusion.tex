@@ -1,0 +1,55 @@
+\chapter{Conclusion \& Future Work}
+\section{Conclusion}
+This Report presents the Data Converters in VLSI Systems and make use of various techniques to implement the Data Converters. The report covers the architecture of ADC and DAC, their implementation, and the design considerations for low power and high performance. The report also discusses the challenges faced during the design process and how they were addressed.
+Few primary subcircuits present in Data converters are presented in the report example S/H circuits, comparators, and etc. 
+\section{Comparison of DAC \& ADC Architectures}
+This section provides a comparative analysis of various DAC and ADC architectures, highlighting their advantages, disadvantages, and typical applications. The comparison is summarized in Tables \ref{tab:adc_comparison} and \ref{tab:dac_comparison}.
+\begin{table}[h!]
+\centering
+\begin{tabular}{|p{2.8cm}|p{4cm}|p{4cm}|p{4cm}|}
+\hline
+\textbf{DAC Type} & \textbf{Advantages} & \textbf{Disadvantages} & \textbf{Typical Applications} \\
+\hline
+Resistor String & Simple design, monotonic & Large area for high resolution, slow & Low-cost, low-speed systems \\
+\hline
+R-2R Ladder & Compact, easy to scale & Sensitive to resistor mismatch & Audio, signal generation \\
+\hline
+Current Steering & High speed, good linearity & Complex layout, higher power & High-speed communications \\
+\hline
+Sigma-Delta & High resolution, noise shaping & Slow conversion rate, complex digital filter & Audio, instrumentation \\
+\hline
+\end{tabular}
+\caption{Comparison of Different DAC Architectures}
+\label{tab:dac_comparison}
+\end{table}
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{|p{2.8cm}|p{3.5cm}|p{3.8cm}|p{3.2cm}|}
+\hline
+\textbf{ADC Type} & \textbf{Advantages} & \textbf{Disadvantages} & \textbf{Typical Applications} \\
+\hline
+Flash & Fast conversion, simple architecture & High power consumption, large area for high resolution & High-speed applications \\
+\hline
+Successive Approximation & Good speed-power trade-off, moderate complexity & Slower than flash, limited resolution & Medium-speed applications \\
+\hline
+Pipeline & High speed, good resolution & Complex design, requires precise components & High-speed data acquisition \\
+\hline
+Sigma-Delta & High resolution, noise shaping & Slow conversion rate, complex digital filter & Audio, instrumentation \\
+\hline
+\end{tabular}
+\caption{Comparison of Different ADC Architectures}
+\label{tab:adc_comparison}
+\end{table}
+
+\section{Future Work}
+The future work includes the implementation of more advanced data converters with improved performance metrics such as higher resolution.Simulating the data converters using advanced simulation tools to validate the design and performance metrics. Additionally, exploring the use of machine learning techniques for optimizing the design and performance of data converters in VLSI systems. The report also suggests further research in the area of low power design techniques for data converters to enhance their efficiency and performance in modern electronic systems.
+
+
+\nocite{bookpll}
+\nocite{vandeplassche2003cmos}
+\nocite{vandeplassche1988eightbit}
+\nocite{abrial1988analog}
+\nocite{schouwenaars1988lowpower}
+\nocite{jin2014energyefficient}
+\nocite{vandeplassche1982monolithic}
