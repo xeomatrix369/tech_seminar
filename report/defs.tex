@@ -13,7 +13,7 @@
 \usepackage{graphicx}
 \usepackage{pgf}
 \usepackage{pgfpages}
-\usepackage{background}
+% \usepackage{background}
 \usepackage{algorithm}% http://ctan.org/pkg/algorithms
 %\usepackage{algpseudocode}% http://ctan.org/pkg/algorithmicx
 \usepackage{algpseudocode}
@@ -68,6 +68,14 @@
             ($(current page.north west)+(0.5in,-0.5in)$) 
             rectangle 
             ($(current page.south east)+(-0.5in,1in)$);
+    \end{tikzpicture}
+}
+\newcommand{\addborderb}{
+    \begin{tikzpicture}[remember picture, overlay]
+        \draw[line width=1pt] 
+            ($(current page.north west)+(0.5in,-0.5in)$) 
+            rectangle 
+            ($(current page.south east)+(-0.5in,0.8in)$);
     \end{tikzpicture}
 }
 

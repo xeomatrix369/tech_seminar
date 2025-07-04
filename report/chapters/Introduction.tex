@@ -24,12 +24,15 @@
 % Define a custom page style for section pages
 \fancypagestyle{chapterstyle}{
         \fancyhf{} % Clear all header and footer fields
-        \renewcommand{\headrulewidth}{0pt} 
+        \renewcommand{\headrulewidth}{1.5pt} 
         \fancyfoot[L]{\textbf{Department of ECE}} % Left side: Department name
 %   \fancyfoot[C]{\textbf{Jan 2025 – Apr 2025}} % Center: Semester dates
         \fancyfoot[R]{\textbf{Page \thepage}} % Right side: Page number
 }
+
 \chapter{Introduction}
+\addborderb
+
 Data conveters are systems that convert analog signals to digital signals and digital signals to analog signals. These converters are termed as DACs (Digital to Analog Converters) and ADCs (Analog to Digital Converters). The
 conversion of signals is essential in modern days as most of the systems are digital in nature. 
 The conversion from Analog to Digital is majorly done by Quantizaion and Sampling. The quantization is the process of mapping a large set of input values to a smaller set of output values. The sampling is the process of converting a continuous signal into a discrete signal by taking samples at regular intervals.
@@ -56,7 +59,7 @@ Initially, Analog processing was done using analog circuits, but with the advent
 
 \section{Objective of the Report}
 The objective of this report is to provide a comprehensive understanding of Data Converters in VLSI Systems, focusing on the theoretical aspects of Analog-to-Digital Converters (ADCs) and Digital-to-Analog Converters (DACs). The report aims to explore the principles of operation, design considerations, and performance metrics of these converters. It will also delve into the different CMOS circuits used in ADCs and DACs, including their working principles, advantages, and disadvantages. The report will
-also explore research \& advancement Example. NeuADC- An automated design for ADC.
+also explore research \& advancement.
 
 
 \section{Fundamentals of DACs and ADCs}
